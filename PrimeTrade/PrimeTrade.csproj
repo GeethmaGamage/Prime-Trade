@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DEC2BABF-C113-4B89-BC06-53E63FD0D774}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PrimeTrade</RootNamespace>
+    <AssemblyName>PrimeTrade</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>false</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://localhost:12413/</InstallUrl>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>47CDCA5FA5DB55030F6DAB88AC308F5624E20029</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>PrimeTrade_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CSharpTest.Net.BPlusTree, Version=2.14.126.467, Culture=neutral, PublicKeyToken=06aee00cce822474, processorArchitecture=MSIL">
+      <HintPath>..\packages\CSharpTest.Net.BPlusTree.2.14.126.467\lib\net45\CSharpTest.Net.BPlusTree.dll</HintPath>
+    </Reference>
+    <Reference Include="CSharpTest.Net.Library, Version=2.14.126.467, Culture=neutral, PublicKeyToken=06aee00cce822474, processorArchitecture=MSIL">
+      <HintPath>..\packages\CSharpTest.Net.Library.2.14.126.467\lib\net45\CSharpTest.Net.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.13.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\modelk\OneDrive - IFS\Documents\Visual Studio 2017\Projects\PrimerTrade\PrimeTrade\packages\MySql.Data.6.9.12\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adminUser\classUser.cs" />
+    <Compile Include="connections\classConnection.cs" />
+    <Compile Include="frmAdminAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminAddUser.Designer.cs">
+      <DependentUpon>frmAdminAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminChangePassword.Designer.cs">
+      <DependentUpon>frmAdminChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminHome.Designer.cs">
+      <DependentUpon>frmAdminHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminViewUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminViewUsers.Designer.cs">
+      <DependentUpon>frmAdminViewUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDistibuterHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDistibuterHome.Designer.cs">
+      <DependentUpon>FrmDistibuterHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDistributerMyPromotionTasks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDistributerMyPromotionTasks.Designer.cs">
+      <DependentUpon>frmDistributerMyPromotionTasks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDistributerMySalesData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDistributerMySalesData.Designer.cs">
+      <DependentUpon>frmDistributerMySalesData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDistributerNewPromotins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDistributerNewPromotins.Designer.cs">
+      <DependentUpon>FrmDistributerNewPromotins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDistributersMySalesProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDistributersMySalesProgress.Designer.cs">
+      <DependentUpon>frmDistributersMySalesProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDistributersSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDistributersSales.Designer.cs">
+      <DependentUpon>frmDistributersSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFinaceApproveStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFinaceApproveStock.Designer.cs">
+      <DependentUpon>frmFinaceApproveStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFinanceManagerHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFinanceManagerHome.Designer.cs">
+      <DependentUpon>frmFinanceManagerHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManagerActivePromo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManagerActivePromo.Designer.cs">
+      <DependentUpon>frmManagerActivePromo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManagerDistributerArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManagerDistributerArea.Designer.cs">
+      <DependentUpon>frmManagerDistributerArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManagerManageArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManagerManageArea.Designer.cs">
+      <DependentUpon>frmManagerManageArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManagerPromotion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManagerPromotion.Designer.cs">
+      <DependentUpon>frmManagerPromotion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManagerReceiveStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManagerReceiveStock.Designer.cs">
+      <DependentUpon>frmManagerReceiveStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManagerStockBasicData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManagerStockBasicData.Designer.cs">
+      <DependentUpon>frmManagerStockBasicData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManagerStockManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManagerStockManagement.Designer.cs">
+      <DependentUpon>frmManagerStockManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManagerViewAllAreaDistRecords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManagerViewAllAreaDistRecords.Designer.cs">
+      <DependentUpon>frmManagerViewAllAreaDistRecords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManagerViewAllPromotion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManagerViewAllPromotion.Designer.cs">
+      <DependentUpon>frmManagerViewAllPromotion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManagerViewDistributersByPromotion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManagerViewDistributersByPromotion.Designer.cs">
+      <DependentUpon>frmManagerViewDistributersByPromotion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManagerViewPromotionByState.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManagerViewPromotionByState.Designer.cs">
+      <DependentUpon>frmManagerViewPromotionByState.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManagerViewStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManagerViewStock.Designer.cs">
+      <DependentUpon>frmManagerViewStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPromotionsToDistributers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPromotionsToDistributers.Designer.cs">
+      <DependentUpon>frmPromotionsToDistributers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSalesHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSalesHome.Designer.cs">
+      <DependentUpon>frmSalesHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStartup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStartup.Designer.cs">
+      <DependentUpon>frmStartup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserlogin.Designer.cs">
+      <DependentUpon>frmUserlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManagerHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManagerHome.Designer.cs">
+      <DependentUpon>frmManagerHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoogleCloude.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GoogleCloude.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerViewPromotionByDistributers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerViewPromotionByDistributers.Designer.cs">
+      <DependentUpon>ManagerViewPromotionByDistributers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAdminAddUser.resx">
+      <DependentUpon>frmAdminAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminChangePassword.resx">
+      <DependentUpon>frmAdminChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminHome.resx">
+      <DependentUpon>frmAdminHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminViewUsers.resx">
+      <DependentUpon>frmAdminViewUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDistibuterHome.resx">
+      <DependentUpon>FrmDistibuterHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDistributerMyPromotionTasks.resx">
+      <DependentUpon>frmDistributerMyPromotionTasks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDistributerMySalesData.resx">
+      <DependentUpon>frmDistributerMySalesData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDistributerNewPromotins.resx">
+      <DependentUpon>FrmDistributerNewPromotins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDistributersMySalesProgress.resx">
+      <DependentUpon>frmDistributersMySalesProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDistributersSales.resx">
+      <DependentUpon>frmDistributersSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFinaceApproveStock.resx">
+      <DependentUpon>frmFinaceApproveStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFinanceManagerHome.resx">
+      <DependentUpon>frmFinanceManagerHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManagerActivePromo.resx">
+      <DependentUpon>frmManagerActivePromo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManagerDistributerArea.resx">
+      <DependentUpon>frmManagerDistributerArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManagerManageArea.resx">
+      <DependentUpon>frmManagerManageArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManagerPromotion.resx">
+      <DependentUpon>frmManagerPromotion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManagerReceiveStock.resx">
+      <DependentUpon>frmManagerReceiveStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManagerStockBasicData.resx">
+      <DependentUpon>frmManagerStockBasicData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManagerStockManagement.resx">
+      <DependentUpon>frmManagerStockManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManagerViewAllAreaDistRecords.resx">
+      <DependentUpon>frmManagerViewAllAreaDistRecords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManagerViewAllPromotion.resx">
+      <DependentUpon>frmManagerViewAllPromotion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManagerViewDistributersByPromotion.resx">
+      <DependentUpon>frmManagerViewDistributersByPromotion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManagerViewPromotionByState.resx">
+      <DependentUpon>frmManagerViewPromotionByState.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManagerViewStock.resx">
+      <DependentUpon>frmManagerViewStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPromotionsToDistributers.resx">
+      <DependentUpon>frmPromotionsToDistributers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSalesHome.resx">
+      <DependentUpon>frmSalesHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStartup.resx">
+      <DependentUpon>frmStartup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserlogin.resx">
+      <DependentUpon>frmUserlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManagerHome.resx">
+      <DependentUpon>frmManagerHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerViewPromotionByDistributers.resx">
+      <DependentUpon>ManagerViewPromotionByDistributers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="GoogleCloude.xsc">
+      <DependentUpon>GoogleCloude.xsd</DependentUpon>
+    </None>
+    <None Include="GoogleCloude.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GoogleCloude.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GoogleCloude.xss">
+      <DependentUpon>GoogleCloude.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="PrimeTrade_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
